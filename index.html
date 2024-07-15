@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" name="bgColor">
+            
+            <label for="fontSize">Font Size:</label>
+            <input type="number" id="fontSize" name="fontSize" min="10" max="100" value="20">
+            
+            <label for="brushType">Brush Type:</label>
+            <select id="brushType" name="brushType">
+                <option value="PencilBrush">Pencil</option>
+                <option value="CircleBrush">Circle</option>
+                <option value="SprayBrush">Spray</option>
+            </select>
+            
+            <label for="brushColor">Brush Color:</label>
+            <input type="color" id="brushColor" name="brushColor" value="#000000">
+        </div>
+        <canvas id="signatureCanvas" width="500" height="200"></canvas>
+        <div class="buttons">
+            <button id="clearBtn">Clear</button>
+            <button id="downloadBtn">Download</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* style.css */
+body {
+    background: linear-gradient(135deg, #ff6b6b, #fbc531, #6a89cc, #4cd137);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e272e; /* Dark background color for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white; /* Text color to ensure readability on dark background */
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid white; /* Border color to match the text */
+}
+
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fbc531; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    color: #1e272e; /* Button text color */
+}
+
+button:hover {
+    background-color: #ff6b6b; /* Change button color on hover */
+}
